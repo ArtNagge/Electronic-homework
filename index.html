@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ES6</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+    <main class="block">
+        <div class="select">
+            <!-- TODO: Доделать позже select, а именно, стилизовать с помощью js -->
+            <select id="selectMath">
+                <option value="">-</option>
+                <option value="Математика">Математика</option>
+                <option value="История">История</option>
+                <option value="Русский">Русский</option>
+                <option value="Изо">Изо</option>
+            </select>
+            <select id="selectDay">
+                <option value="">-</option>
+                <option value="Понедельник">Понедельник</option>
+                <option value="Вторник">Вторник</option>
+                <option value="Среда">Среда</option>
+                <option value="Четверг">Четверг</option>
+                <option value="Пятница">Пятница</option>
+            </select>
+            <input type="text" id="nameTask" placeholder="Введите задание">
+            <button onclick="timeTable.addTask()">Добавить задание</button>
+        </div>
+
+        <table id="timeTable">
+            <tr id="dayList"></tr>
+            <tbody id="taskList"></tbody>
+        </table>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
